@@ -17,32 +17,22 @@ export default function Home() {
   }
   
   return (
-    <>
+    <div className={styles.body}>
       <nav class={styles.nav}>
         <div id={styles.navlogo} class={styles.navsection}>
+          <Link href="#"><Image src="/logo.png" width={30} height={30} /></Link>
           <Link href="#">
             MillburnFTC
           </Link>
         </div>
-        <div id={styles.navlink} class={styles.navsection}>
-          <Link href="#">
-            about
-          </Link>
-          <Link href="#">
-            build
-          </Link>
-          <Link href="#">
-            code
-          </Link>
-        </div>
         <div id={styles.navsocial} class={styles.navsection}>
-          <Link href="#">
+          <Link href="https://github.com/SaazM/8405FTC" target={"_blank"}>
             github
           </Link>
-          <Link href="#">
+          <Link href="https://www.instagram.com/8405millburnrobotics/" target={"_blank"}>
             instagram
           </Link>
-          <Link href="#">
+          <Link href="https://www.youtube.com/@millburnrobotics174" target={"_blank"}>
             youtube
           </Link>
         </div>
@@ -79,7 +69,7 @@ export default function Home() {
           </div>
           <div class={styles.mainsection} id={styles.maindesc}>
             <p>
-              Out team consists of 15 members across grades at Millburn High School. This is our first year back to FTC after a 2 year break.
+              Our team consists of 15 members across grades at Millburn High School. This is our first year back to FTC after a 2 year break.
             </p>
             <div id={styles.pagenav}>
               <button onClick={handleStatusToggle}>home</button>
@@ -87,6 +77,9 @@ export default function Home() {
           </div>
         </article>
       </main>
-    </>
+
+      <div class={styles.innercursor} />
+      <div class={styles.outercursor} />
+    </div>
   )
 }

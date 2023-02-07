@@ -1,8 +1,14 @@
+.body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
     width: 100%;
     border-bottom: 1px solid #002B36;
+    height: 15vh;
 }
 
 .nav > .navsection {
@@ -14,13 +20,23 @@
     justify-content: center;
 }
 
+.nav > .navsection:hover {
+    background: radial-gradient(
+        800px circle at 100px 100px,
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+    );
+}
+
 #navlogo {
     justify-content: flex-start;
     border-left: none;
+    flex-grow: 3;
 }
 
-#navlink {
-    gap: 4rem;
+#navlogo > Image {
+    margin: 0;
+    padding: 0;
 }
 
 #navsocial {
@@ -31,16 +47,21 @@
     flex-basis: calc(100% / 3);
 }
 
-#navsocial, #navcontact {
+#navsocial {
     flex-grow: 1;
 }
 
+#navsocial {
+    flex-grow: 2;
+}
+
 .main > article {
+    flex-basis: auto;
     flex-grow: 1;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    position: fixed;
-    height: 100%;
+    position: absolute;
+    height: 85vh;
 }
 
 .main > article[data-status=false] {
@@ -172,14 +193,39 @@
 #maintitle {
     position: relative;
     justify-content: left;
+    background: inherit;
+}
+
+#maintitle:hover {
+    background: linear-gradient(-45deg, #002B36, #00090c, #002B36);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #maintitle > h1 {
     font-family: 'Unbounded', cursive;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 600;
     position: absolute;
     top: 50%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
     padding-left: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    #maintitle > h1 {
+        font-size: 2rem;
+    }
 }
