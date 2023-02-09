@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div className={styles.body}>
       <Navbar />
-      <main class={styles.main}>
+      <main className={styles.main}>
         <Page
           id="home"
           title="8405 Millburn Robotics"

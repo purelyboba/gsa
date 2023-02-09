@@ -5,11 +5,11 @@ import styles from '../styles/styles.module.css';
 
 export default function Navbar() {
     return (
-        <nav class={styles.nav}>
+        <nav className={styles.nav}>
             <div id={styles.navlogo} class={styles.navsection}>
-                <Link href="/"><Image src="/logo.png" width={30} height={30} /></Link>
-                <Link href="/">
-                MillburnFTC
+                <Link className={styles.navimage} href="/"><Image src="/logo.png" width={30} height={30} /></Link>
+                <Link className={styles.navtitle} href="/">
+                8405 | Millburn Robotics
                 </Link>
             </div>
             <div id={styles.navsocial} class={styles.navsection}>

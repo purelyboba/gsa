@@ -34,9 +34,14 @@
     flex-grow: 3;
 }
 
-#navlogo > Image {
+.navimage {
     margin: 0;
     padding: 0;
+}
+
+.navtitle {
+    padding: 0;
+    margin: 0;
 }
 
 #navsocial {
