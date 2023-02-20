@@ -20,7 +20,6 @@ export default function PowerplayPage() {
         </div>
         <div className={styles.mainsection} id={styles.maindesc}>
           <p>This is our first season back after a 2 year break. We are doing really well so far, being crowned league champions and advancing to the state championship.</p>
-          <Image />
           <Link id={styles.pagenav} href="/home">
             <button>home</button>
           </Link>
