@@ -14,9 +14,6 @@ export default function Page({id, title, p}) {
       </div>
       <div className={styles.mainsection} id={styles.maindesc}>
         <p>{p}</p>
-        <Link id={styles.pagenav} href="/about">
-          <button>about</button>
-        </Link>
       </div>
     </article>
   )

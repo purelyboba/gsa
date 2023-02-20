@@ -187,7 +187,7 @@
     background-size: cover;
 }
 
-#aboutimage {
+#powerplayimage {
     background-image: 
         linear-gradient(to bottom, transparent, #00090c), 
         url("/team.jpg");
@@ -259,5 +259,36 @@
 
     .mainsection {
         width: 100vw;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #maintitle > h1 {
+        font-size: 1rem;
+    }
+
+    #navsocial {
+        display: none;
+    }
+
+    #navcontact {
+        display: none;
+    }
+
+    .main > article {
+        flex-basis: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 85vh;
+    }
+
+    .mainsection {
+        width: 100vw;
+    }
+
+    #maindesc {
+        font-size: 0.8rem;
     }
 }
