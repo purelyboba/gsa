@@ -7,25 +7,14 @@ export default function Navbar() {
     return (
         <nav className={styles.nav}>
             <div id={styles.navlogo} class={styles.navsection}>
-                <Link className={styles.navimage} href="/"><Image src="/logo.png" width={30} height={30} /></Link>
+                <Link className={styles.navimage} href="/"><Image src="/gsaLogoClear.png" width={70} height={70} /></Link>
                 <Link className={styles.navtitle} href="/">
-                8405 | Millburn Robotics
-                </Link>
-            </div>
-            <div id={styles.navsocial} class={styles.navsection}>
-                <Link href="https://github.com/SaazM/8405FTC" target={"_blank"}>
-                github
-                </Link>
-                <Link href="https://www.instagram.com/8405millburnrobotics/" target={"_blank"}>
-                instagram
-                </Link>
-                <Link href="https://www.youtube.com/@millburnrobotics174" target={"_blank"}>
-                youtube
+                The Garden State Alliance
                 </Link>
             </div>
             <div id={styles.navcontact} class={styles.navsection}>
-                <Link href="#">
-                contact
+                <Link href="https://discord.gg/8XKe3gyCZG" target='_blank'>
+                join now
                 </Link>
             </div>
             <div id={styles.hamburger} />

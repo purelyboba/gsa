@@ -14,13 +14,13 @@ export default function HomePage() {
         <div className={styles.mainsection} id={styles.maininfo}>
           <div className={styles.subsection} id={styles[`homeimage`]}></div>
           <div className={styles.subsection} id={styles.maintitle}>
-            <h1>8405 Millburn Robotics</h1>
+            <h1>The Garden State Alliance</h1>
           </div>
         </div>
         <div className={styles.mainsection} id={styles.maindesc}>
-          <p>8405 Millburn Robotics is a FIRST® Tech Challenge (FTC) team based at Millburn High School in Millburn, New Jersey. FTC is a nonprofit robotics competition where teams build and program robots to compete, inspiring students in STEM through hands-on learning and direct experience in the competition. We strive to exhibit gracious professionalism in all that we do as an FTC team. Aside from the competition itself, our team members also participate in outreach events, such as EssexIQ, a nonprofit where we pass on robotics skills we have learned through FTC.</p>
-          <Link id={styles.pagenav} href="/powerplay">
-            <button>powerplay</button>
+          <p>The Garden State Alliance is a distinguished collective of First Tech Challenge (FTC) teams based in New Jersey, dedicated to furthering the ideals of cooperative competition and community involvement. Emphasizing both technological advancement and community connection, this alliance not only competes at a high level but also organizes an array of outreach events to engage the public and inspire future generations. Recognizing that preparation and practice are paramount, the alliance also hosts scrimmages, fostering a collaborative environment where teams can test their robotic designs, share strategies, and refine their skills. Through these endeavors, The Garden State Alliance exemplifies the true spirit of FTC, blending competition with camaraderie, and innovation with outreach.</p>
+          <Link id={styles.pagenav} href="https://discord.gg/8XKe3gyCZG" target='blank'>
+            <button>join now</button>
           </Link>
         </div>
       </article>
