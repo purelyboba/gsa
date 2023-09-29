@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import styles from '../styles/styles.module.css';
 import Navbar from './navbar';
@@ -22,6 +23,9 @@ export default function HomePage() {
           <Link id={styles.pagenav} href="https://discord.gg/8XKe3gyCZG" target='blank'>
             <button>join now</button>
           </Link>
+        </div>
+        <div className={styles.subsection} id={styles.qrcode}>
+          <Link className={styles.navimage} href="https://discord.gg/8XKe3gyCZG"><Image src="/qrcode.png" width={200} height={200} /></Link>
         </div>
       </article>
       </main>

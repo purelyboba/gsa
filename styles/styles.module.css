@@ -42,6 +42,7 @@
 .navtitle {
     padding: 0;
     margin: 0;
+    font-size: 1rem;
 }
 
 #navsocial {
@@ -187,13 +188,8 @@
     background-size: cover;
 }
 
-#powerplayimage {
-    background-image: 
-        linear-gradient(to bottom, transparent, #00090c), 
-        url("/team.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#qrcode {
+    display: none;
 }
 
 #maintitle {
@@ -259,13 +255,21 @@
 }
 
 @media screen and (max-width: 510px) {
-    #maintitle > h1 {
-        font-size: 1rem;
+    #maintitle {
+        display: none;
+    }
+
+    .navtitle {
+        display: none;
     }
 
     /* #navcontact {
         display: none;
     } */
+
+    #homeimage {
+        height: 200px;
+    }
 
     .main > article {
         flex-basis: auto;
@@ -278,9 +282,21 @@
 
     .mainsection {
         width: 100vw;
+        height: 40%;
     }
 
     #maindesc {
         font-size: 0.8rem;
+        /* display: none;  */
+        /* remove above line later */
+        border-bottom: none;
+    }
+
+    #maindesc > p {
+        line-height: 1.2rem;
+    }
+
+    #pagenav {
+        display: none;
     }
 }

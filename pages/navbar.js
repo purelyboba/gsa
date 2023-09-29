@@ -14,7 +14,7 @@ export default function Navbar() {
             </div>
             <div id={styles.navcontact} class={styles.navsection}>
                 <Link href="https://discord.gg/8XKe3gyCZG" target='_blank'>
-                join now
+                JOIN NOW
                 </Link>
             </div>
             <div id={styles.hamburger} />
